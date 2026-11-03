@@ -1,26 +1,431 @@
 @import "tailwindcss";
 
+/* ============================================
+   BRANDING TOKENS (Design System)
+   ============================================ */
 :root {
+  /* Brand Colors */
+  --color-primary: #e6d40b;
+  --color-primary-hover: #cfbe0a;
+  --color-secondary: #000000;
+  --color-white: #ffffff;
+
+  /* Semantic Tokens */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
+  --muted: #f5f5f5;
+  --border: #e5e5e5;
+
+  /* Brand override for common text */
+  --color-primary-foreground: #000000;
 }
 
+/* ============================================
+   TAILWIND THEME MAPPING (Tailwind v4)
+   ============================================ */
 @theme inline {
+  /* Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--color-primary);
+  --color-primary-hover: var(--color-primary-hover);
+  --color-secondary: var(--color-secondary);
+  --color-white: var(--color-white);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-primary-foreground: var(--color-primary-foreground);
+
+  /* Fonts */
+  --font-heading: var(--font-barlow-condensed);
+  --font-body: var(--font-barlow);
+  --font-sans: var(--font-barlow);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Spacing / Radius */
+  --radius-sm: 2px;
+  --radius-md: 6px;
+  --radius-lg: 12px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ============================================
+   BASE STYLES
+   ============================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
+
+/* ============================================
+   HEADINGS — Barlow Condensed
+   ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), Arial, sans-serif;
+  font-weight: 800;
+  line-height: 1.1;
+  color: inherit;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: 800;
+}
+
+h3 {
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  font-weight: 700;
+}
+
+h4 {
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  font-weight: 700;
+}
+
+h5 {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* ============================================
+   PARAGRAPHS / BODY TEXT — Barlow
+   ============================================ */
+p,
+li,
+span,
+a,
+button,
+input,
+textarea,
+select,
+label {
+  font-family: var(--font-body), Arial, sans-serif;
+}
+
+/* ============================================
+   LINKS
+   ============================================ */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a[href^="tel:"] {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  text-underline-offset: 3px;
+}
+
+a[href^="tel:"]:hover {
+  color: var(--color-primary);
+}
+
+/* ============================================
+   RICH CONTENT BLOCK UTILITIES
+   ============================================ */
+.rich-content h2,
+.rich-content h3,
+.rich-content h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.rich-content p {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.rich-content ul,
+.rich-content ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.rich-content ul {
+  list-style: disc;
+}
+
+.rich-content ol {
+  list-style: decimal;
+}
+
+.rich-content li {
+  margin-bottom: 0.5rem;
+}
+
+.rich-content strong {
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+/* ============================================
+   UTILITIES — BUTTONS
+   ============================================ */
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-secondary);
+  font-family: var(--font-heading);
+  font-weight: 800;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-hover);
+  color: var(--color-secondary);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(230, 212, 11, 0.35);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background: var(--color-secondary);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-weight: 800;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius-sm);
+  transition: opacity 0.2s ease, transform 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  opacity: 0.85;
+  color: var(--color-white);
+  transform: translateY(-1px);
+}
+
+/* ============================================
+   UTILITIES — LAYOUT HELPERS
+   ============================================ */
+.section-container,
+.container-page {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 640px) {
+  .section-container,
+  .container-page {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-container,
+  .container-page {
+    padding-inline: 2rem;
+  }
+}
+
+/* ============================================
+   GSAP INITIAL STATES (prevent FOUC)
+   ============================================ */
+.hero-eyebrow,
+.hero-heading,
+.hero-sub,
+.hero-badges,
+.hero-cta-group > * {
+  will-change: transform, opacity;
+}
+
+/* ============================================
+   CUSTOM SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 3px;
+}
+
+/* ============================================
+   FOCUS VISIBLE
+   ============================================ */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ============================================
+   SELECTION
+   ============================================ */
+::selection {
+  background: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+/* ============================================
+   MARQUEE ANIMATION
+   ============================================ */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* ============================================
+   SCROLL REVEAL
+   ============================================ */
+.reveal {
+  opacity: 0;
+  will-change: opacity, transform, filter;
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  filter: blur(4px);
+}
+
+.reveal-up {
+  transform: translateY(40px);
+}
+
+.reveal-fade {
+  transform: none;
+}
+
+.reveal-left {
+  transform: translateX(-40px);
+}
+
+.reveal-right {
+  transform: translateX(40px);
+}
+
+.reveal-scale {
+  transform: scale(0.92);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+  filter: blur(0);
+}
+
+/* ============================================
+   CTA PULSE + HAZARD STRIPE
+   ============================================ */
+@keyframes cta-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(230, 212, 11, 0.55);
+  }
+  55% {
+    box-shadow: 0 0 0 14px rgba(230, 212, 11, 0);
+  }
+}
+
+.btn-pulse {
+  animation: cta-pulse 2.4s ease-out infinite;
+}
+
+@keyframes hazard-slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 40px 0;
+  }
+}
+
+.hazard-stripe {
+  background: repeating-linear-gradient(
+    45deg,
+    #000 0px,
+    #000 10px,
+    #e6d40b 10px,
+    #e6d40b 20px
+  );
+  animation: hazard-slide 1.2s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-up,
+  .reveal-fade,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+
+  .animate-marquee,
+  .btn-pulse,
+  .hazard-stripe {
+    animation: none;
+  }
+}
+
