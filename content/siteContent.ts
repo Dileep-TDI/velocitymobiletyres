@@ -13,30 +13,31 @@ export const site = {
   },
 } as const;
 
-/** Campbelltown landing — home page `/` */
+/** Campbelltown landing — /mobile-tyre-repair-campbelltown/ */
 export const campbelltown = {
-  slug: "",
+  slug: "mobile-tyre-repair-campbelltown",
   location: {
     suburb: "Campbelltown",
     region: "Sydney NSW",
     label: "Campbelltown, Sydney NSW",
     postalCode: "2560",
-    addressLine: "Farrow Rd, Campbelltown NSW 2560",
+    addressLine: "Farrow Rd, Campbelltown NSW 2560, Australia",
     mapEmbedUrl:
-      "https://maps.google.com/maps?q=Campbelltown%2C%20NSW%2C%20Australia&t=&z=13&ie=UTF8&iwloc=&output=embed",
-    mapTitle: "Quickfit Mobile Tyres Service Area - Campbelltown",
+      "https://maps.google.com/maps?q=Quickfit+Mobile+Tyres+Campbelltown%2C+Farrow+Rd%2C+Campbelltown+NSW+2560%2C+Australia&t=&z=15&ie=UTF8&iwloc=&output=embed",
+    mapTitle: "Quickfit Mobile Tyres Campbelltown — Farrow Rd, Campbelltown NSW 2560",
     googleSearchUrl:
       "https://www.google.com/search?q=Quickfit+Mobile+Tyres+Campbelltown",
     googleReviewsUrl:
       "https://www.google.com/search?q=Quickfit+Mobile+Tyres+Campbelltown+reviews",
-    geo: { latitude: -34.063696, longitude: 150.811713 },
+    geo: { latitude: -34.0675, longitude: 150.8142 },
   },
   seo: {
     metaTitle:
       "Mobile Tyre Repair Campbelltown | Quickfit Mobile Tyres",
     metaDescription:
       "Need mobile tyre repair in Campbelltown? Quickfit Mobile Tyres comes to you for puncture repair, tyre replacement, wheel balancing and fleet tyre maintenance. Open 7 am–9 pm. Call 0404 730 738.",
-    canonicalUrl: "https://quickfitmobiletyres.com.au/",
+    canonicalUrl:
+      "https://quickfitmobiletyres.com.au/mobile-tyre-repair-campbelltown/",
   },
   hero: {
     eyebrow: "Campbelltown, Sydney NSW",
@@ -93,7 +94,12 @@ export const campbelltown = {
     eyebrow: "We come to you",
     title: "We Come to You in Campbelltown",
     description:
-      "A tyre problem can interrupt your day, especially when you have somewhere to be. With Quickfit Mobile Tyres, you don't need to organise a trip to a tyre shop. We bring mobile tyre services to your location in Campbelltown, whether you're at home, at work, managing a fleet, or need safe roadside assistance. Our mobile service is designed to make tyre repairs and replacements more convenient. Need help with a tyre problem in Campbelltown? Call 0404 730 738.",
+      "A tyre problem can interrupt your day, especially when you have somewhere to be. With Quickfit Mobile Tyres, you don't need to organise a trip to a tyre shop.",
+    paragraphs: [
+      "We bring mobile tyre services to your location in Campbelltown, whether you're:",
+      "Our mobile service is designed to make tyre repairs and replacements more convenient.",
+      "Need help with a tyre problem in Campbelltown? Call 0404 730 738.",
+    ],
     cards: [
       {
         title: "At Home",
@@ -149,7 +155,7 @@ export const campbelltown = {
   },
   partners: {
     id: 4,
-    heading: "Our Partners",
+    heading: "Partnering with Major Tyre Brands",
   },
   reviews: {
     id: 5,

@@ -97,16 +97,19 @@ export default function FinalCtaSection({ data }: FinalCtaProps) {
               )}
 
               {data.hours && (
-                <div className="flex items-center gap-3 px-4 py-3 rounded-xl bg-white border border-gray-200 shadow-sm text-gray-800">
-                  <span className="w-2.5 h-2.5 rounded-full bg-green-500 shrink-0" />
-                  <div className="text-xs">
-                    <span className="text-gray-500 uppercase font-semibold block">
+                <div className="flex items-center gap-3.5 px-6 py-4 rounded-xl bg-white border border-gray-200 shadow-sm text-gray-800 min-h-[56px]">
+                  <span className="w-3 h-3 rounded-full bg-green-500 shrink-0" />
+                  <p className="font-heading leading-none">
+                    <span className="text-gray-500 uppercase font-bold text-sm tracking-wider">
                       Operating Daily
                     </span>
-                    <span className="font-heading font-black text-secondary text-sm">
+                    <span className="mx-2 text-gray-300" aria-hidden="true">
+                      ·
+                    </span>
+                    <span className="font-black text-primary text-lg sm:text-xl">
                       {data.hours}
                     </span>
-                  </div>
+                  </p>
                 </div>
               )}
             </div>
@@ -201,7 +204,7 @@ export default function FinalCtaSection({ data }: FinalCtaProps) {
                         onChange={(e) =>
                           setFormData({ ...formData, suburb: e.target.value })
                         }
-                        placeholder="e.g. West Ryde, Meadowbank, Eastwood"
+                        placeholder="e.g. Farrow Rd, Campbelltown NSW 2560"
                         className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-300 text-black placeholder-gray-400 text-sm focus:outline-none focus:bg-white focus:border-primary transition-colors"
                       />
                     </div>

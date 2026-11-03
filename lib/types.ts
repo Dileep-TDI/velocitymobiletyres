@@ -112,6 +112,7 @@ export type WeComeToYouData = {
     eyebrow: string | null;
     title: string | null;
     description: string | null;
+    paragraphs?: string[];
     cards: { title: string; description: string }[];
 };
 

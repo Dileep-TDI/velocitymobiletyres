@@ -19,7 +19,7 @@ export default function LocalAreaSection({ data }: LocalAreaProps) {
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
           src="/images/quickfit-roadside-service.jpg"
-          alt="Quickfit Mobile Tyres Roadside Service in West Ryde"
+          alt="Quickfit Mobile Tyres Roadside Service in Campbelltown"
           fill
           sizes="100vw"
           className="object-cover object-center opacity-20"
@@ -28,28 +28,28 @@ export default function LocalAreaSection({ data }: LocalAreaProps) {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          {/* LEFT SIDE: Google Map */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+          {/* LEFT SIDE: Google Map — matches right column height */}
           <ScrollReveal
             variant="left"
             delay={80}
-            className="lg:col-span-6 order-2 lg:order-1"
+            className="lg:col-span-6 order-2 lg:order-1 h-full min-h-[380px] sm:min-h-[460px]"
           >
-            <div className="w-full h-[380px] sm:h-[460px] rounded-2xl overflow-hidden border border-white/20 shadow-2xl bg-black">
+            <div className="w-full h-full min-h-[380px] sm:min-h-[460px] rounded-2xl overflow-hidden border border-white/20 shadow-2xl bg-black">
               <iframe
                 title={
                   data.mapTitle ??
-                  "Quickfit Mobile Tyres Service Area - West Ryde"
+                  "Quickfit Mobile Tyres Campbelltown — Farrow Rd, Campbelltown NSW 2560"
                 }
                 src={
                   data.mapEmbedUrl ??
-                  "https://maps.google.com/maps?q=West%20Ryde%2C%20NSW%2C%20Australia&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  "https://maps.google.com/maps?q=Quickfit+Mobile+Tyres+Campbelltown%2C+Farrow+Rd%2C+Campbelltown+NSW+2560%2C+Australia&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 }
                 width="100%"
                 height="100%"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="w-full h-full border-0"
+                className="w-full h-full border-0 min-h-[380px] sm:min-h-[460px]"
               />
             </div>
           </ScrollReveal>
@@ -57,7 +57,7 @@ export default function LocalAreaSection({ data }: LocalAreaProps) {
           {/* RIGHT SIDE: Local area copy */}
           <ScrollReveal
             variant="right"
-            className="lg:col-span-6 order-1 lg:order-2 flex flex-col justify-center"
+            className="lg:col-span-6 order-1 lg:order-2 flex flex-col justify-center h-full"
           >
             {/* Eyebrow badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1 mb-4 rounded-full bg-primary/20 border border-primary/30 text-primary font-heading font-bold text-xs uppercase tracking-widest w-fit">
@@ -81,7 +81,7 @@ export default function LocalAreaSection({ data }: LocalAreaProps) {
               id="local-area-title"
               className="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-white uppercase tracking-tight leading-tight mb-5"
             >
-              {data.heading ?? "Mobile Tyre Repair Near You in West Ryde"}
+              {data.heading ?? "Mobile Tyre Services Across Campbelltown NSW"}
             </h2>
 
             {/* Paragraphs from Strapi (100% dynamic) */}

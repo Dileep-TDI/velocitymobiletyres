@@ -154,6 +154,13 @@ a[href^="tel:"]:hover {
   color: var(--color-primary);
 }
 
+/* Keep black text/icon on yellow CTA buttons (tel:hover must not override) */
+a[href^="tel:"].btn-primary,
+a[href^="tel:"].btn-primary:hover {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
 /* ============================================
    RICH CONTENT BLOCK UTILITIES
    ============================================ */
@@ -333,6 +340,16 @@ a[href^="tel:"]:hover {
   animation-play-state: paused;
 }
 
+.animate-marquee-reviews {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 45s linear infinite;
+}
+
+.animate-marquee-reviews:hover {
+  animation-play-state: paused;
+}
+
 /* ============================================
    SCROLL REVEAL
    ============================================ */
@@ -423,6 +440,7 @@ a[href^="tel:"]:hover {
   }
 
   .animate-marquee,
+  .animate-marquee-reviews,
   .btn-pulse,
   .hazard-stripe {
     animation: none;

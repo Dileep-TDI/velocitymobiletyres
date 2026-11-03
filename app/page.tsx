@@ -1,22 +1,7 @@
-import type { Metadata } from "next";
-import { site, campbelltown } from "@/content/siteContent";
-import LandingPageView from "@/components/LandingPageView";
+import { redirect } from "next/navigation";
+import { campbelltown } from "@/content/siteContent";
 
-export const metadata: Metadata = {
-  title: campbelltown.seo.metaTitle,
-  description: campbelltown.seo.metaDescription,
-  alternates: { canonical: campbelltown.seo.canonicalUrl },
-  openGraph: {
-    title: campbelltown.seo.metaTitle,
-    description: campbelltown.seo.metaDescription,
-    url: campbelltown.seo.canonicalUrl,
-    siteName: site.brand,
-    locale: "en_AU",
-    type: "website",
-  },
-};
-
-/** Homepage content comes from content/siteContent.ts only (Strapi disabled). */
+/** Canonical Campbelltown landing lives at /mobile-tyre-repair-campbelltown/ */
 export default function HomePage() {
-  return <LandingPageView page={campbelltown} />;
+  redirect(`/${campbelltown.slug}/`);
 }

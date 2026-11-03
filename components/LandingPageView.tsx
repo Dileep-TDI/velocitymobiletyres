@@ -6,6 +6,7 @@ import PartnersSection from "@/components/sections/PartnersSection";
 import LocalAreaSection from "@/components/sections/LocalAreaSection";
 import FaqSection from "@/components/sections/FaqSection";
 import ReviewsSection from "@/components/sections/ReviewsSection";
+import GoogleReviewsCarousel from "@/components/sections/GoogleReviewsCarousel";
 import FinalCtaSection from "@/components/sections/FinalCtaSection";
 import MobileStickyBar from "@/components/MobileStickyBar";
 import {
@@ -51,6 +52,7 @@ export default function LandingPageView({
       <HowItWorksSection data={howItWorks} />
       <PartnersSection data={partners} />
       <ReviewsSection reviews={reviews} findOnGoogle={findOnGoogle} />
+      <GoogleReviewsCarousel />
       <LocalAreaSection data={localArea} />
       <FaqSection faq={faq} />
       <FinalCtaSection data={finalCta} />

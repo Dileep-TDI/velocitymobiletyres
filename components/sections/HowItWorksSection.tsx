@@ -133,10 +133,10 @@ export default function HowItWorksSection({ data }: HowItWorksProps) {
                     <div className="mt-4 pt-4 border-t border-gray-100">
                       <a
                         href={step.phoneUrl}
-                        className="inline-flex items-center gap-2 text-black hover:text-primary font-heading font-bold text-sm hover:underline"
+                        className="inline-flex items-center gap-2 !text-primary hover:!text-[#cfbe0a] font-heading font-bold text-sm underline decoration-primary underline-offset-4 transition-colors"
                       >
                         <svg
-                          className="w-4 h-4 text-black"
+                          className="w-4 h-4 text-primary"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                           aria-hidden="true"

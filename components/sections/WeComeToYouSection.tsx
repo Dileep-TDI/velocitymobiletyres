@@ -38,7 +38,10 @@ const LOCATION_VISUALS = [
 ];
 
 function LocationIcon({ index, active }: { index: number; active: boolean }) {
-  const strokeClass = active ? "text-primary" : "text-gray-400 group-hover:text-primary";
+  // Active badge is yellow (bg-primary) — icon must be black for contrast
+  const strokeClass = active
+    ? "text-black"
+    : "text-gray-300 group-hover:text-primary";
 
   if (index === 0) {
     // Home icon
@@ -100,6 +103,11 @@ export default function WeComeToYouSection({ data }: WeComeToYouSectionProps) {
           {data.description && (
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
               {data.description}
+            </p>
+          )}
+          {data.paragraphs?.[0] && (
+            <p className="mt-4 text-gray-300 text-base sm:text-lg leading-relaxed">
+              {data.paragraphs[0]}
             </p>
           )}
         </ScrollReveal>
@@ -184,6 +192,19 @@ export default function WeComeToYouSection({ data }: WeComeToYouSectionProps) {
             </div>
           </div>
         </div>
+
+        {(data.paragraphs?.length ?? 0) > 1 && (
+          <ScrollReveal variant="up" delay={80} className="mt-10 max-w-3xl space-y-4">
+            {data.paragraphs!.slice(1).map((p, idx) => (
+              <p
+                key={idx}
+                className="text-gray-300 text-base sm:text-lg leading-relaxed"
+              >
+                {p}
+              </p>
+            ))}
+          </ScrollReveal>
+        )}
       </div>
     </section>
   );

@@ -6,15 +6,6 @@ const PHONE_HREF = "tel:0404730738";
 const PHONE_LABEL = "0404 730 738";
 const HOURS = "7 am–9 pm";
 
-const quickLinks = [
-    { label: "Home", href: "/" },
-    { label: "Services", href: "#services" },
-    { label: "Locations", href: "#locations" },
-    { label: "About", href: "#about" },
-    { label: "Reviews", href: "#reviews" },
-    { label: "Contact", href: "#contact" },
-];
-
 const socialLinks = [
     {
         label: "Facebook",
@@ -52,7 +43,7 @@ export default function Footer() {
         <footer className="bg-secondary text-white">
             {/* Main Footer */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                     {/* Brand Column */}
                     <div className="space-y-5">
                         <Link href="/" className="inline-block">
@@ -61,11 +52,11 @@ export default function Footer() {
                                 alt={staticImages.logoWhite.alt}
                                 width={staticImages.logoWhite.width}
                                 height={staticImages.logoWhite.height}
-                                className="h-12 w-auto object-contain brightness-0 invert"
+                                className="h-16 sm:h-20 w-auto object-contain brightness-0 invert"
                             />
                         </Link>
                         <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
-                            Mobile tyre repair and replacement services in West Ryde and nearby suburbs. We come to you.
+                            Mobile tyre repair and replacement services in Campbelltown and nearby suburbs. We come to you.
                         </p>
                         {/* Social Icons */}
                         <div className="flex items-center gap-3">
@@ -82,26 +73,6 @@ export default function Footer() {
                                 </a>
                             ))}
                         </div>
-                    </div>
-
-                    {/* Quick Links */}
-                    <div>
-                        <h3 className="text-white font-heading font-bold text-lg uppercase tracking-wider mb-5">
-                            Quick Links
-                        </h3>
-                        <ul className="space-y-2">
-                            {quickLinks.map((link) => (
-                                <li key={link.label}>
-                                    <Link
-                                        href={link.href}
-                                        className="text-gray-400 hover:text-primary transition-colors text-sm flex items-center gap-1.5"
-                                    >
-                                        <span className="text-primary text-xs">›</span>
-                                        {link.label}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
                     </div>
 
                     {/* Contact Column */}
@@ -139,7 +110,7 @@ export default function Footer() {
                                 </svg>
                                 <div>
                                     <p className="text-white font-bold">Service Area</p>
-                                    <p className="text-gray-400 text-xs mt-0.5">West Ryde & nearby suburbs, Sydney NSW</p>
+                                    <p className="text-gray-400 text-xs mt-0.5">Farrow Rd, Campbelltown NSW 2560</p>
                                 </div>
                             </li>
                         </ul>

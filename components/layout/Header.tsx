@@ -34,7 +34,7 @@ export default function Header() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        {/* Logo Left */}
+        {/* Logo: white by default, brand yellow when scrolled */}
         <Link
           href="/"
           className="flex items-center gap-2 transition-transform duration-200 hover:scale-[1.02] rounded"
@@ -46,6 +46,11 @@ export default function Header() {
             width={staticImages.logo.width}
             height={staticImages.logo.height}
             priority
+            className={
+              scrolled
+                ? "transition-[filter] duration-300"
+                : "brightness-0 invert transition-[filter] duration-300"
+            }
           />
         </Link>
 

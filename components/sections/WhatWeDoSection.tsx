@@ -134,13 +134,17 @@ export default function WhatWeDoSection({ data }: WhatWeDoSectionProps) {
                 </p>
               </div>
 
-              {/* Action indicator at bottom */}
-              <div className="pt-6 mt-6 border-t border-border flex items-center justify-between text-xs font-heading font-bold uppercase tracking-wider text-black group-hover:text-primary transition-colors">
+              {/* Call CTA — same number as header */}
+              <a
+                href="tel:0404730738"
+                aria-label="Call Quickfit Mobile Tyres at 0404 730 738"
+                className="pt-6 mt-6 border-t border-border flex items-center justify-between text-xs font-heading font-bold uppercase tracking-wider !text-black hover:!text-primary transition-colors no-underline"
+              >
                 <span>Fast On-Site Service</span>
                 <span className="text-base transition-transform duration-300 group-hover:translate-x-1.5">
                   →
                 </span>
-              </div>
+              </a>
             </ScrollReveal>
           ))}
         </div>

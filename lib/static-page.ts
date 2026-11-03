@@ -58,6 +58,7 @@ export function buildLandingView(
     eyebrow: page.weComeToYou.eyebrow,
     title: page.weComeToYou.title,
     description: page.weComeToYou.description,
+    paragraphs: [...(page.weComeToYou.paragraphs ?? [])],
     cards: page.weComeToYou.cards.map((c) => ({ ...c })),
   };
 

@@ -9,20 +9,6 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   cacheComponents: true,
   partialPrefetching: true,
-  async redirects() {
-    return [
-      {
-        source: "/mobile-tyre-repair-campbelltown",
-        destination: "/",
-        permanent: true,
-      },
-      {
-        source: "/mobile-tyre-repair-campbelltown/",
-        destination: "/",
-        permanent: true,
-      },
-    ];
-  },
   images: {
     remotePatterns: [
       {

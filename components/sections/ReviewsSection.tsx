@@ -1,5 +1,6 @@
 import type { ReviewsData, FindOnGoogleData } from "@/lib/types";
 import ScrollReveal from "@/components/ScrollReveal";
+import GoogleRatingScore from "@/components/sections/GoogleRatingScore";
 
 interface ReviewsSectionProps {
   reviews: ReviewsData | null;
@@ -28,15 +29,15 @@ export default function ReviewsSection({
     reviews?.googleReviewsUrl ?? googleSearchUrl;
   const reviewsCtaLabel = reviews?.ctaLabel ?? "Read Our Google Reviews";
   const businessLabel =
-    findOnGoogle?.businessLabel ?? "Quickfit Mobile Tyres West Ryde";
+    findOnGoogle?.businessLabel ?? "Quickfit Mobile Tyres Campbelltown";
   const locationLabel =
-    reviews?.locationLabel ?? "100% Mobile Service in West Ryde";
+    reviews?.locationLabel ?? "100% Mobile Service in Campbelltown";
 
   return (
     <section
       id="reviews"
       aria-labelledby="reviews-title"
-      className="relative py-20 lg:py-28 bg-[#0a0a0a] text-white border-b border-white/5 overflow-hidden"
+      className="relative pt-20 lg:pt-28 pb-4 lg:pb-6 bg-[#0a0a0a] text-white overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
@@ -108,24 +109,8 @@ export default function ReviewsSection({
                 </div>
               </div>
 
-              {/* Rating Score */}
-              <div className="flex items-baseline gap-4 mb-4">
-                <span className="font-heading font-black text-5xl sm:text-6xl text-primary tracking-tight">
-                  4.9
-                </span>
-                <div>
-                  <div className="flex items-center gap-1 text-primary text-xl">
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                  </div>
-                  <div className="text-white/60 text-xs font-medium">
-                    Over 500+ happy Sydney motorists
-                  </div>
-                </div>
-              </div>
+              {/* Rating from Google API — fallback 5.0 */}
+              <GoogleRatingScore />
 
               {/* Verified Feature Highlights */}
               <p className="text-white/80 text-sm sm:text-base leading-relaxed mb-6">
@@ -187,11 +172,23 @@ export default function ReviewsSection({
                   <span>{businessLabel}</span>
                 </div>
                 <div className="text-white/50 text-xs">
-                  Sydney NSW, Australia • Open 7:00 AM – 9:00 PM
+                  Farrow Rd, Campbelltown NSW 2560 • Open 7:00 AM – 9:00 PM
                 </div>
-                <div className="text-primary text-xs font-semibold">
-                  📞 0404 730 738
-                </div>
+                <a
+                  href="tel:0404730738"
+                  aria-label="Call Quickfit Mobile Tyres at 0404 730 738"
+                  className="inline-flex items-center gap-2 !text-primary hover:!text-[#cfbe0a] font-heading font-black text-base sm:text-lg underline decoration-primary underline-offset-4 transition-colors"
+                >
+                  <svg
+                    className="w-4 h-4 text-primary shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                  </svg>
+                  <span>0404 730 738</span>
+                </a>
               </div>
             </div>
 
@@ -199,7 +196,7 @@ export default function ReviewsSection({
               href={googleSearchUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-outline !py-3 !px-5 text-sm font-heading font-black uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-primary hover:text-black hover:border-primary transition-all"
+              className="!py-3 !px-5 text-sm font-heading font-black uppercase tracking-wider flex items-center justify-center gap-2 !text-primary hover:!text-[#cfbe0a] border border-primary/50 hover:border-primary hover:bg-primary/10 rounded transition-all"
             >
               <span>View On Google</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

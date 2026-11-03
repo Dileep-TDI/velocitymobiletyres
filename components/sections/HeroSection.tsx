@@ -221,28 +221,49 @@ export default function HeroSection({
           </h1>
 
           {hero.descriptions.length > 0 && (
-            <div className="space-y-3 mb-6 sm:mb-8">
-              {hero.descriptions.map((desc, i) => (
-                <p
-                  key={i}
-                  data-hero-animate
-                  className="text-gray-300 text-base sm:text-lg md:text-xl font-normal leading-relaxed max-w-2xl"
-                >
-                  {desc}
-                </p>
-              ))}
+            <div className="space-y-3 mb-5 sm:mb-6">
+              {hero.descriptions
+                .filter((desc) => !/^call\s+/i.test(desc))
+                .map((desc, i) => (
+                  <p
+                    key={i}
+                    data-hero-animate
+                    className="text-gray-300 text-base sm:text-lg md:text-xl font-normal leading-relaxed max-w-2xl"
+                  >
+                    {desc}
+                  </p>
+                ))}
             </div>
           )}
 
-          {hero.hours && (
-            <p
-              data-hero-animate
-              className="mb-6 sm:mb-8 text-sm sm:text-base text-white/90 font-heading font-bold uppercase tracking-wider"
-            >
-              <span className="text-primary">{hero.hours.label}</span>{" "}
-              <span>{hero.hours.value}</span>
-            </p>
-          )}
+          {hero.descriptions
+            .filter((desc) => /^call\s+/i.test(desc))
+            .map((desc, i) => {
+              const phoneMatch = desc.match(
+                /(\d{4}\s?\d{3}\s?\d{3}|\+?\d[\d\s-]{8,})/,
+              );
+              const phone = phoneMatch?.[1]?.trim() ?? "0404 730 738";
+              const tel =
+                hero.phoneCta?.url ??
+                `tel:${phone.replace(/\s+/g, "")}`;
+              const label = desc.replace(phone, "").replace(/:\s*$/, "").trim();
+
+              return (
+                <p
+                  key={`call-line-${i}`}
+                  data-hero-animate
+                  className="mb-6 sm:mb-8 text-base sm:text-lg md:text-xl font-heading font-bold tracking-wide"
+                >
+                  <span className="text-white">{label ? `${label}: ` : "Call "}</span>
+                  <a
+                    href={tel}
+                    className="!text-primary font-black underline decoration-primary underline-offset-4 hover:!text-[#cfbe0a] transition-colors"
+                  >
+                    {phone}
+                  </a>
+                </p>
+              );
+            })}
 
           <div
             data-hero-animate
