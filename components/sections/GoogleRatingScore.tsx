@@ -17,8 +17,10 @@ function formatRating(value: number) {
 }
 
 export default function GoogleRatingScore() {
-  const [rating, setRating] = useState(FALLBACK_RATING);
-  const [reviewCount, setReviewCount] = useState(googleBusinessMeta.reviewCount);
+  const [rating, setRating] = useState<number>(FALLBACK_RATING);
+  const [reviewCount, setReviewCount] = useState<number>(
+    googleBusinessMeta.reviewCount,
+  );
   const [source, setSource] = useState<"static" | "places-api">("static");
 
   useEffect(() => {
