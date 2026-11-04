@@ -13,7 +13,7 @@ const CONTINENTAL_TYRE_URL =
   "https://quickfitmobiletyres.com.au/wp-content/uploads/2026/04/cropped-continental-tyres.png";
 
 const STATS = [
-  { value: "30 MIN", label: "Avg Response Time" },
+  { value: "15 MIN", label: "Avg Response Time" },
   { value: "5,000+", label: "Jobs Completed" },
   { value: "7AM–9PM", label: "7 Days Open" },
   { value: "4.9 ★", label: "Google Rating" },
