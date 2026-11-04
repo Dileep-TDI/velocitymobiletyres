@@ -138,10 +138,10 @@ export default function WhatWeDoSection({ data }: WhatWeDoSectionProps) {
               <a
                 href="tel:0404730738"
                 aria-label="Call Quickfit Mobile Tyres at 0404 730 738 for fast on-site service"
-                className="btn-primary mt-6 w-full !py-3 !px-4 text-xs sm:text-sm font-heading font-black uppercase tracking-wider flex items-center justify-center gap-2 no-underline shadow-md shadow-primary/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                className="btn-primary mt-6 w-full !py-3 !px-3 sm:!px-4 text-[11px] sm:text-xs font-heading font-black uppercase tracking-wide whitespace-nowrap flex items-center justify-center gap-1.5 no-underline shadow-md shadow-primary/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               >
                 Fast On-Site Service
-                <span aria-hidden="true" className="text-base leading-none">
+                <span aria-hidden="true" className="text-sm leading-none shrink-0">
                   →
                 </span>
               </a>
