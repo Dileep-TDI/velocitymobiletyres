@@ -4,7 +4,7 @@ import { staticImages } from "@/lib/site-images";
 
 const PHONE_HREF = "tel:0404730738";
 const PHONE_LABEL = "0404 730 738";
-const HOURS = "7 am–9 pm";
+const HOURS = "7 am – 9 pm";
 
 const socialLinks = [
     {
@@ -55,7 +55,7 @@ export default function Footer() {
                                 className="h-16 sm:h-20 w-auto object-contain brightness-0 invert"
                             />
                         </Link>
-                        <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
+                        <p className="text-gray-200 text-base sm:text-lg leading-relaxed max-w-md">
                             Mobile tyre repair and replacement services in Campbelltown and nearby suburbs. We come to you.
                         </p>
                         {/* Social Icons */}
@@ -80,7 +80,7 @@ export default function Footer() {
                         <h3 className="text-white font-heading font-bold text-lg uppercase tracking-wider mb-5">
                             Contact Us
                         </h3>
-                        <ul className="space-y-4 text-sm">
+                        <ul className="space-y-5 text-base">
                             <li className="flex items-start gap-3">
                                 <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
@@ -88,11 +88,13 @@ export default function Footer() {
                                 <div>
                                     <a
                                         href={PHONE_HREF}
-                                        className="text-white font-bold hover:text-primary transition-colors !text-white hover:!text-primary"
+                                        className="text-white text-lg font-bold hover:text-primary transition-colors !text-white hover:!text-primary"
                                     >
                                         {PHONE_LABEL}
                                     </a>
-                                    <p className="text-gray-400 text-xs mt-0.5">Call us for mobile tyre assistance</p>
+                                    <p className="text-gray-300 text-sm sm:text-base mt-1">
+                                        Call us for mobile tyre assistance
+                                    </p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
@@ -100,8 +102,10 @@ export default function Footer() {
                                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                                 </svg>
                                 <div>
-                                    <p className="text-white font-bold">Operating Hours</p>
-                                    <p className="text-gray-400 text-xs mt-0.5">{HOURS}, 7 days</p>
+                                    <p className="text-white text-lg font-bold">Operating Hours</p>
+                                    <p className="text-gray-300 text-sm sm:text-base mt-1 font-medium">
+                                        {HOURS}, 7 days
+                                    </p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
@@ -109,8 +113,10 @@ export default function Footer() {
                                     <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                                 </svg>
                                 <div>
-                                    <p className="text-white font-bold">Service Area</p>
-                                    <p className="text-gray-400 text-xs mt-0.5">Farrow Rd, Campbelltown NSW 2560</p>
+                                    <p className="text-white text-lg font-bold">Service Area</p>
+                                    <p className="text-gray-300 text-sm sm:text-base mt-1">
+                                        Farrow Rd, Campbelltown NSW 2560
+                                    </p>
                                 </div>
                             </li>
                         </ul>

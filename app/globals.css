@@ -73,49 +73,56 @@ body {
 
 /* ============================================
    HEADINGS — Barlow Condensed
+   Must live in @layer base so Tailwind text-*
+   utilities (e.g. text-white) can override color.
+   Unlayered h2 { color: inherit } was beating
+   utilities and left dark headings invisible on
+   dark sections (Partners, etc.).
    ============================================ */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-heading), Arial, sans-serif;
-  font-weight: 800;
-  line-height: 1.1;
-  color: inherit;
-  letter-spacing: -0.01em;
-}
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading), Arial, sans-serif;
+    font-weight: 800;
+    line-height: 1.1;
+    color: inherit;
+    letter-spacing: -0.01em;
+  }
 
-h1 {
-  font-size: clamp(2.5rem, 7vw, 5rem);
-  font-weight: 900;
-  letter-spacing: -0.02em;
-}
+  h1 {
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    font-weight: 900;
+    letter-spacing: -0.02em;
+  }
 
-h2 {
-  font-size: clamp(1.75rem, 4vw, 3rem);
-  font-weight: 800;
-}
+  h2 {
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    font-weight: 800;
+  }
 
-h3 {
-  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
-  font-weight: 700;
-}
+  h3 {
+    font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+    font-weight: 700;
+  }
 
-h4 {
-  font-size: clamp(1.15rem, 2vw, 1.4rem);
-  font-weight: 700;
-}
+  h4 {
+    font-size: clamp(1.15rem, 2vw, 1.4rem);
+    font-weight: 700;
+  }
 
-h5 {
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
-  font-weight: 600;
-}
+  h5 {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-weight: 600;
+  }
 
-h6 {
-  font-size: 1rem;
-  font-weight: 600;
+  h6 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
 }
 
 /* ============================================
@@ -321,19 +328,21 @@ a[href^="tel:"].btn-primary:hover {
 /* ============================================
    MARQUEE ANIMATION
    ============================================ */
+/* -50% = one full track width (PartnersSection renders two identical tracks) */
 @keyframes marquee-scroll {
-  0% {
-    transform: translateX(0);
+  from {
+    transform: translate3d(0, 0, 0);
   }
-  100% {
-    transform: translateX(-50%);
+  to {
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
 .animate-marquee {
   display: flex;
   width: max-content;
-  animation: marquee-scroll 28s linear infinite;
+  will-change: transform;
+  animation: marquee-scroll 40s linear infinite;
 }
 
 .animate-marquee:hover {

@@ -26,7 +26,7 @@ const checks = [
     "Got a flat tyre, puncture or damaged tyre in Campbelltown? Quickfit Mobile Tyres brings professional mobile tyre services directly to your location.",
     "Whether you're at home, at work or dealing with a tyre problem on the road, we come to you, assess the issue and help get you back on the road.",
     "Call Quickfit Mobile Tyres: 0404 730 738",
-    "Operating Hours: 7 am–9 pm",
+    "Operating Hours: 7 am – 9 pm",
     "Call Now",
   ]),
   check("2. What We Do", [
@@ -76,7 +76,7 @@ const checks = [
     "Instead of taking time out of your day to visit a tyre shop, you can contact us and have the tyre service brought to your location.",
     "From tyre replacement and puncture repair to wheel balancing and fleet tyre maintenance, we're here to make dealing with tyre problems simpler.",
     "Whether you searched for mobile tyre repair near me, tyre repair Campbelltown or mobile tyre replacement, contact Quickfit Mobile Tyres for assistance.",
-    "7 am–9 pm",
+    "7 am – 9 pm",
   ]),
   check("8. Find Us on Google", ["Find Us on Google"]),
   check("9. FAQ", [
@@ -96,7 +96,7 @@ const checks = [
   check("10. Final CTA", [
     "Need Mobile Tyre Assistance in Campbelltown?",
     "Don't let a flat, punctured or damaged tyre disrupt your day. Call Quickfit Mobile Tyres and get mobile tyre assistance at your location.",
-    "7 am–9 pm",
+    "7 am – 9 pm",
     "Call Now",
   ]),
 ];

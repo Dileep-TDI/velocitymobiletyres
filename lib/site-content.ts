@@ -366,7 +366,7 @@ export function transformLocalArea(
                 )
             );
             if (/7\s*am/i.test(allListText)) {
-                hours = "7 am – 9 pm.";
+                hours = ".";
             }
         }
     }
@@ -446,7 +446,7 @@ export function transformFinalCta(
                 )
             );
             if (/7\s*am/i.test(allText)) {
-                hours = "7 am–9 pm";
+                hours = "7 am – 9 pm";
             }
         }
     }

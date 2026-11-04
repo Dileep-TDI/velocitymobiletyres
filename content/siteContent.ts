@@ -7,7 +7,7 @@ export const site = {
   brand: "Quickfit Mobile Tyres",
   phone: "0404 730 738",
   phoneTel: "tel:0404730738",
-  hours: "7 am–9 pm",
+  hours: "7 am – 9 pm",
   nav: {
     ctaLabel: "Call Now",
   },
@@ -35,7 +35,7 @@ export const campbelltown = {
     metaTitle:
       "Mobile Tyre Repair Campbelltown | Quickfit Mobile Tyres",
     metaDescription:
-      "Need mobile tyre repair in Campbelltown? Quickfit Mobile Tyres comes to you for puncture repair, tyre replacement, wheel balancing and fleet tyre maintenance. Open 7 am–9 pm. Call 0404 730 738.",
+      "Need mobile tyre repair in Campbelltown? Quickfit Mobile Tyres comes to you for puncture repair, tyre replacement, wheel balancing and fleet tyre maintenance. Open 7 am – 9 pm. Call 0404 730 738.",
     canonicalUrl:
       "https://quickfitmobiletyres.com.au/mobile-tyre-repair-campbelltown/",
   },
@@ -50,8 +50,8 @@ export const campbelltown = {
     ],
     hours: {
       label: "Operating Hours:",
-      value: "7 am–9 pm",
-      text: "Operating Hours: 7 am–9 pm",
+      value: "7 am – 9 pm",
+      text: "Operating Hours: 7 am – 9 pm",
     },
     phoneCta: {
       label: "Call Now",
@@ -186,7 +186,7 @@ export const campbelltown = {
       url: "tel:0404730738",
       type: "tel" as const,
     },
-    hours: "7 am–9 pm",
+    hours: "7 am – 9 pm",
   },
   faq: {
     heading: "Frequently Asked Questions",
@@ -240,7 +240,7 @@ export const campbelltown = {
       url: "tel:0404730738",
       type: "tel" as const,
     },
-    hours: "7 am–9 pm",
+    hours: "7 am – 9 pm",
     hasForm: false,
   },
 } as const;

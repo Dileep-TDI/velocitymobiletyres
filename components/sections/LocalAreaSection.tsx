@@ -120,24 +120,25 @@ export default function LocalAreaSection({ data }: LocalAreaProps) {
               )}
 
               {data.hours && (
-                <div className="flex items-center gap-3 px-4 py-3 rounded-xl bg-white/[0.05] border border-white/10 text-white/80">
+                <div className="flex items-center gap-3 px-4 py-3.5 rounded-xl bg-white/15 border border-white/30 shadow-lg backdrop-blur-sm whitespace-nowrap">
                   <svg
-                    className="w-4 h-4 text-primary shrink-0"
+                    className="w-5 h-5 text-primary shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
                     <circle cx="12" cy="12" r="10" strokeWidth="2" />
                     <path strokeWidth="2" strokeLinecap="round" d="M12 6v6l4 2" />
                   </svg>
-                  <div className="text-xs">
-                    <span className="text-white/40 uppercase font-semibold block">
+                  <p className="flex items-center gap-2.5 text-sm sm:text-base font-heading leading-none">
+                    <span className="text-white uppercase font-bold tracking-wider">
                       Operating Hours
                     </span>
-                    <span className="font-heading font-black text-white tracking-wide text-sm">
+                    <span className="text-primary font-black tracking-wide">
                       {data.hours}
                     </span>
-                  </div>
+                  </p>
                 </div>
               )}
             </div>

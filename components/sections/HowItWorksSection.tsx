@@ -130,13 +130,14 @@ export default function HowItWorksSection({ data }: HowItWorksProps) {
 
                   {/* Phone CTA if present on step (e.g. Call 0404 730 738) */}
                   {step.phoneUrl && (
-                    <div className="mt-4 pt-4 border-t border-gray-100">
+                    <div className="mt-5 pt-5 border-t border-gray-200">
                       <a
                         href={step.phoneUrl}
-                        className="inline-flex items-center gap-2 !text-primary hover:!text-[#cfbe0a] font-heading font-bold text-sm underline decoration-primary underline-offset-4 transition-colors"
+                        aria-label={`Call Quickfit Mobile Tyres at ${step.phoneLabel || "0404 730 738"}`}
+                        className="inline-flex items-center gap-2.5 !text-primary hover:!text-[#cfbe0a] font-heading font-black text-xl sm:text-2xl tracking-wide underline decoration-2 decoration-primary underline-offset-4 transition-colors"
                       >
                         <svg
-                          className="w-4 h-4 text-primary"
+                          className="w-6 h-6 text-primary shrink-0"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                           aria-hidden="true"

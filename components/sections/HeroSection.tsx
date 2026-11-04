@@ -252,12 +252,12 @@ export default function HeroSection({
                 <p
                   key={`call-line-${i}`}
                   data-hero-animate
-                  className="mb-6 sm:mb-8 text-base sm:text-lg md:text-xl font-heading font-bold tracking-wide"
+                  className="mb-6 sm:mb-8 text-lg sm:text-xl md:text-2xl font-heading font-bold tracking-wide"
                 >
                   <span className="text-white">{label ? `${label}: ` : "Call "}</span>
                   <a
                     href={tel}
-                    className="!text-primary font-black underline decoration-primary underline-offset-4 hover:!text-[#cfbe0a] transition-colors"
+                    className="!text-primary font-black text-xl sm:text-2xl md:text-3xl underline decoration-2 decoration-primary underline-offset-4 hover:!text-[#cfbe0a] transition-colors"
                   >
                     {phone}
                   </a>

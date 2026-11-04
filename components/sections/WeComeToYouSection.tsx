@@ -15,25 +15,21 @@ const LOCATION_VISUALS = [
     image:
       "https://quickfitmobiletyres.com.au/wp-content/uploads/2026/10/Classic-Red-Sports-Car-in-the-Workshop.png",
     alt: "Mobile Tyre Service At Home in West Ryde",
-    badge: "Driveway Assistance",
   },
   {
     image:
       "https://quickfitmobiletyres.com.au/wp-content/uploads/2026/10/Roadside-Tire-Service-in-Action.webp",
     alt: "Mobile Tyre Service At Work in West Ryde",
-    badge: "Workplace & Office Carpark",
   },
   {
     image:
       "https://quickfitmobiletyres.com.au/wp-content/uploads/2026/10/Classic-Red-Sports-Car-in-the-Workshop.png",
     alt: "Fleet Tyre Service Depot in West Ryde",
-    badge: "Business Depot & Vans",
   },
   {
     image:
       "https://quickfitmobiletyres.com.au/wp-content/uploads/2026/10/Roadside-Tire-Service-in-Action.webp",
     alt: "Safe Roadside Tyre Assistance in West Ryde",
-    badge: "Emergency Roadside Dispatch",
   },
 ];
 
@@ -80,7 +76,6 @@ export default function WeComeToYouSection({ data }: WeComeToYouSectionProps) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const activeVisual = LOCATION_VISUALS[activeIndex % LOCATION_VISUALS.length];
-  const activeCard = data.cards[activeIndex] ?? data.cards[0];
 
   return (
     <section id="locations" className="py-20 md:py-28 bg-secondary text-white relative overflow-hidden">
@@ -167,29 +162,16 @@ export default function WeComeToYouSection({ data }: WeComeToYouSectionProps) {
             })}
           </div>
 
-          {/* Column 2: Sticky Image Display (5 cols on lg) */}
-          <div className="lg:col-span-5 relative min-h-[340px] sm:min-h-[420px] rounded-2xl overflow-hidden border-2 border-white/15 bg-black shadow-2xl flex flex-col justify-end p-6 sm:p-8">
+          {/* Column 2: image preview — desktop only (hidden on mobile & tablet) */}
+          <div className="hidden lg:block lg:col-span-5 relative min-h-[420px] rounded-2xl overflow-hidden border-2 border-white/15 bg-black shadow-2xl">
             <Image
               src={activeVisual.image}
               alt={activeVisual.alt}
               fill
-              sizes="(max-width: 1024px) 100vw, 40vw"
-              className="object-cover object-center opacity-65 transition-all duration-500 ease-in-out"
+              sizes="40vw"
+              className="object-cover object-center opacity-75 transition-all duration-500 ease-in-out"
             />
-            <div className="absolute inset-0 bg-black/40" />
-
-            {/* Bottom active card overlay info */}
-            <div className="relative z-10 bg-black/85 backdrop-blur-md p-5 rounded-xl border border-white/15">
-              <span className="text-primary font-heading font-bold text-xs uppercase tracking-widest block mb-1">
-                {activeVisual.badge}
-              </span>
-              <h4 className="font-heading font-black text-xl text-white mb-2">
-                {activeCard?.title}
-              </h4>
-              <p className="text-gray-300 text-xs sm:text-sm line-clamp-2">
-                {activeCard?.description}
-              </p>
-            </div>
+            <div className="absolute inset-0 bg-black/30" aria-hidden="true" />
           </div>
         </div>
 

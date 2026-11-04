@@ -134,14 +134,14 @@ export default function WhatWeDoSection({ data }: WhatWeDoSectionProps) {
                 </p>
               </div>
 
-              {/* Call CTA — same number as header */}
+              {/* Card action — solid primary button */}
               <a
                 href="tel:0404730738"
-                aria-label="Call Quickfit Mobile Tyres at 0404 730 738"
-                className="pt-6 mt-6 border-t border-border flex items-center justify-between text-xs font-heading font-bold uppercase tracking-wider !text-black hover:!text-primary transition-colors no-underline"
+                aria-label="Call Quickfit Mobile Tyres at 0404 730 738 for fast on-site service"
+                className="btn-primary mt-6 w-full !py-3 !px-4 text-xs sm:text-sm font-heading font-black uppercase tracking-wider flex items-center justify-center gap-2 no-underline shadow-md shadow-primary/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               >
-                <span>Fast On-Site Service</span>
-                <span className="text-base transition-transform duration-300 group-hover:translate-x-1.5">
+                Fast On-Site Service
+                <span aria-hidden="true" className="text-base leading-none">
                   →
                 </span>
               </a>
