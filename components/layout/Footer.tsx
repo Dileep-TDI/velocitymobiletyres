@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { staticImages } from "@/lib/site-images";
+import { activePage } from "@/lib/static-page";
 
 const PHONE_HREF = "tel:0404730738";
 const PHONE_LABEL = "0404 730 738";
@@ -56,7 +57,7 @@ export default function Footer() {
                             />
                         </Link>
                         <p className="text-gray-200 text-base sm:text-lg leading-relaxed max-w-md">
-                            Mobile tyre repair and replacement services in Campbelltown and nearby suburbs. We come to you.
+                            {`Mobile tyre repair and replacement services in ${activePage.location.suburb} and nearby suburbs. We come to you.`}
                         </p>
                         {/* Social Icons */}
                         <div className="flex items-center gap-3">
@@ -115,7 +116,7 @@ export default function Footer() {
                                 <div>
                                     <p className="text-white text-lg font-bold">Service Area</p>
                                     <p className="text-gray-300 text-sm sm:text-base mt-1">
-                                        Farrow Rd, Campbelltown NSW 2560
+                                        {activePage.location.shortAddress}
                                     </p>
                                 </div>
                             </li>

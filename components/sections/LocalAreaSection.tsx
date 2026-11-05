@@ -19,7 +19,7 @@ export default function LocalAreaSection({ data }: LocalAreaProps) {
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
           src="/images/quickfit-roadside-service.jpg"
-          alt="Quickfit Mobile Tyres Roadside Service in Campbelltown"
+          alt="Quickfit Mobile Tyres Roadside Service in Kirrawee"
           fill
           sizes="100vw"
           className="object-cover object-center opacity-20"
@@ -39,11 +39,11 @@ export default function LocalAreaSection({ data }: LocalAreaProps) {
               <iframe
                 title={
                   data.mapTitle ??
-                  "Quickfit Mobile Tyres Campbelltown — Farrow Rd, Campbelltown NSW 2560"
+                  "Quickfit Mobile Tyres Kirrawee — Kirrawee NSW 2232"
                 }
                 src={
                   data.mapEmbedUrl ??
-                  "https://maps.google.com/maps?q=Quickfit+Mobile+Tyres+Campbelltown%2C+Farrow+Rd%2C+Campbelltown+NSW+2560%2C+Australia&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  "https://maps.google.com/maps?q=Quickfit%20Mobile%20Tyres%20Kirrawee%2C%20Kirrawee%20NSW%202232%2C%20Australia&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 }
                 width="100%"
                 height="100%"
@@ -81,7 +81,7 @@ export default function LocalAreaSection({ data }: LocalAreaProps) {
               id="local-area-title"
               className="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-white uppercase tracking-tight leading-tight mb-5"
             >
-              {data.heading ?? "Mobile Tyre Services Across Campbelltown NSW"}
+              {data.heading ?? "Mobile Tyre Repair Near You in Kirrawee"}
             </h2>
 
             {/* Paragraphs from Strapi (100% dynamic) */}

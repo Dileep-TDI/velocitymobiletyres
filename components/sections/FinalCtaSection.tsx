@@ -165,7 +165,7 @@ export default function FinalCtaSection({ data }: FinalCtaProps) {
                         onChange={(e) =>
                           setFormData({ ...formData, name: e.target.value })
                         }
-                        placeholder="e.g. John Smith"
+                        placeholder="e.g. Kirrawee NSW 2232"
                         className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-300 text-black placeholder-gray-400 text-sm focus:outline-none focus:bg-white focus:border-primary transition-colors"
                       />
                     </div>

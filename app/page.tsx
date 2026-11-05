@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
-import { campbelltown } from "@/content/siteContent";
+import { kirrawee } from "@/content/siteContent";
 
-/** Canonical Campbelltown landing lives at /mobile-tyre-repair-campbelltown/ */
+/** Canonical Kirrawee landing lives at /mobile-tyre-repair-kirrawee/ */
 export default function HomePage() {
-  redirect(`/${campbelltown.slug}/`);
+  redirect(`/${kirrawee.slug}/`);
 }
