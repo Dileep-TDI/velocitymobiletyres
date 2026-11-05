@@ -1,5 +1,5 @@
 /**
- * Google Business reviews — Campbelltown listing.
+ * Google Business reviews — West Ryde listing.
  *
  * GOOGLE_MAPS_API_KEY is optional:
  * - With key → /api/google-reviews loads live reviews from Places API
@@ -19,14 +19,14 @@ export type GoogleReview = {
 };
 
 export const googleBusinessMeta = {
-  name: "Quickfit Mobile Tyres Campbelltown",
-  address: "Farrow Rd, Campbelltown NSW 2560, Australia",
+  name: "Quickfit Mobile Tyres West Ryde",
+  address: "West Ryde NSW 2114, Australia",
   /** Fallback rating when GOOGLE_MAPS_API_KEY is not set */
   rating: 5,
   reviewCount: 4,
   mapsUrl: "https://www.google.com/maps?cid=3491704013674685629",
   searchQuery:
-    "Quickfit Mobile Tyres Farrow Rd Campbelltown NSW 2560",
+    "Quickfit Mobile Tyres West Ryde NSW 2114",
 } as const;
 
 /** Fallback only — real Google reviews if live sources are not configured */
@@ -38,7 +38,7 @@ export const googleReviews: GoogleReview[] = [
     text: "Sam was incredibly quick, mindful & gave amazing advice friendly vendor greatly appreciated, thanks",
     relativeTime: "a month ago",
     source: "Google",
-    location: "Campbelltown",
+    location: "West Ryde",
   },
   {
     id: "emerald-kollias",
@@ -47,7 +47,7 @@ export const googleReviews: GoogleReview[] = [
     text: "Highly recommend Sam, replied instantly, turned up within 45 minutes. Great price replaced my burst tyre, gave me good price on second tyre tread required replacing. Checked air pressure and topped the others up. Very professional service.",
     relativeTime: "a year ago",
     source: "Google",
-    location: "Campbelltown",
+    location: "West Ryde",
   },
   {
     id: "henry-swisher",
@@ -56,6 +56,6 @@ export const googleReviews: GoogleReview[] = [
     text: "Sam was responsive and helpful, sorting out a solution and being flexible to help me get back on the road. Highly recommend - thanks again!!",
     relativeTime: "a year ago",
     source: "Google",
-    location: "Campbelltown",
+    location: "West Ryde",
   },
 ];

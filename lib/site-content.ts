@@ -30,7 +30,7 @@ export const siteContent = {
         phone: site.phone,
         phoneTel: site.phoneTel,
         hours: site.hours,
-        location: "Campbelltown, Sydney NSW",
+        location: "West Ryde, Sydney NSW",
     },
     nav: { ctaLabel: site.nav.ctaLabel },
     buttons: {

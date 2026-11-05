@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
-import { campbelltown } from "@/content/siteContent";
+import { westRyde } from "@/content/siteContent";
 
-/** Canonical Campbelltown landing lives at /mobile-tyre-repair-campbelltown/ */
+/** Canonical West Ryde landing lives at /mobile-tyre-repair-west-ryde/ */
 export default function HomePage() {
-  redirect(`/${campbelltown.slug}/`);
+  redirect(`/${westRyde.slug}/`);
 }
