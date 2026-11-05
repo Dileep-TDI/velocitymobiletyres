@@ -13,39 +13,41 @@ export const site = {
   },
 } as const;
 
-/** Campbelltown landing — /mobile-tyre-repair-campbelltown/ */
-export const campbelltown = {
-  slug: "mobile-tyre-repair-campbelltown",
+/** Kingsgrove landing — /mobile-tyre-repair-kingsgrove/ */
+export const kingsgrove = {
+  slug: "mobile-tyre-repair-kingsgrove",
   location: {
-    suburb: "Campbelltown",
+    suburb: "Kingsgrove",
     region: "Sydney NSW",
-    label: "Campbelltown, Sydney NSW",
-    postalCode: "2560",
-    addressLine: "Farrow Rd, Campbelltown NSW 2560, Australia",
+    label: "Kingsgrove, Sydney NSW",
+    postalCode: "2208",
+    streetAddress: "Kingsgrove",
+    addressLine: "Kingsgrove NSW 2208, Australia",
+    shortAddress: "Kingsgrove NSW 2208",
     mapEmbedUrl:
-      "https://maps.google.com/maps?q=Quickfit+Mobile+Tyres+Campbelltown%2C+Farrow+Rd%2C+Campbelltown+NSW+2560%2C+Australia&t=&z=15&ie=UTF8&iwloc=&output=embed",
-    mapTitle: "Quickfit Mobile Tyres Campbelltown — Farrow Rd, Campbelltown NSW 2560",
+      "https://maps.google.com/maps?q=Quickfit%20Mobile%20Tyres%20Kingsgrove%2C%20Kingsgrove%20NSW%202208%2C%20Australia&t=&z=15&ie=UTF8&iwloc=&output=embed",
+    mapTitle: "Quickfit Mobile Tyres Kingsgrove — Kingsgrove NSW 2208",
     googleSearchUrl:
-      "https://www.google.com/search?q=Quickfit+Mobile+Tyres+Campbelltown",
+      "https://www.google.com/search?q=Quickfit%20Mobile%20Tyres%20Kingsgrove",
     googleReviewsUrl:
-      "https://www.google.com/search?q=Quickfit+Mobile+Tyres+Campbelltown+reviews",
-    geo: { latitude: -34.0675, longitude: 150.8142 },
+      "https://www.google.com/search?q=Quickfit%20Mobile%20Tyres%20Kingsgrove%20reviews",
+    geo: { latitude: -33.93937, longitude: 151.09952 },
   },
   seo: {
     metaTitle:
-      "Mobile Tyre Repair Campbelltown | Quickfit Mobile Tyres",
+      "Mobile Tyre Repair Kingsgrove | Quickfit Mobile Tyres",
     metaDescription:
-      "Need mobile tyre repair in Campbelltown? Quickfit Mobile Tyres comes to you for puncture repair, tyre replacement, wheel balancing and fleet tyre maintenance. Open 7 am – 9 pm. Call 0404 730 738.",
+      "Need mobile tyre repair in Kingsgrove? Quickfit Mobile Tyres comes to you for puncture repair, tyre replacement, wheel balancing and fleet tyre maintenance. Open 7 am – 9 pm. Call 0404 730 738.",
     canonicalUrl:
-      "https://quickfitmobiletyres.com.au/mobile-tyre-repair-campbelltown/",
+      "https://quickfitmobiletyres.com.au/mobile-tyre-repair-kingsgrove/",
   },
   hero: {
-    eyebrow: "Campbelltown, Sydney NSW",
-    title: "Need Mobile Tyre Repair in Campbelltown?",
-    highlight: "Campbelltown",
+    eyebrow: "Kingsgrove, Sydney NSW",
+    title: "Flat or Damaged Tyre in Kingsgrove? We Come to You.",
+    highlight: "Kingsgrove",
     descriptions: [
-      "Got a flat tyre, puncture or damaged tyre in Campbelltown? Quickfit Mobile Tyres brings professional mobile tyre services directly to your location.",
-      "Whether you're at home, at work or dealing with a tyre problem on the road, we come to you, assess the issue and help get you back on the road.",
+      "A flat tyre or unexpected puncture can happen when you least expect it. If you're in Kingsgrove and need help, Quickfit Mobile Tyres brings mobile tyre services directly to your location.",
+      "From puncture repairs to tyre replacements, we assess the problem and help you get back on the road without needing to take your vehicle to a tyre shop.",
       "Call Quickfit Mobile Tyres: 0404 730 738",
     ],
     hours: {
@@ -65,59 +67,62 @@ export const campbelltown = {
     eyebrow: "Services",
     title: "What We Do",
     description:
-      "From unexpected punctures to tyre replacements, Quickfit Mobile Tyres provides practical mobile tyre services across Campbelltown.",
+      "Quickfit Mobile Tyres provides mobile tyre assistance in Kingsgrove for everyday drivers and businesses.",
     cards: [
-      {
-        title: "Puncture Repair",
-        description:
-          "A puncture does not always mean you need a new tyre. The damage and tyre condition must be assessed to determine whether a safe repair is possible. If replacement is necessary, we can discuss the available options.",
-      },
       {
         title: "Tyre Replacement",
         description:
-          "Experiencing steering wheel vibrations? We come to your location to assess the issue and help improve your wheel balance.",
+          "If your tyre is worn, damaged or beyond repair, we can come to your location in Kingsgrove and carry out the required tyre replacement.",
+      },
+      {
+        title: "Puncture Repair",
+        description:
+          "A puncture doesn't always mean you need a new tyre. We assess the damage and repair the tyre where it is safe and suitable. If it cannot be safely repaired, replacement may be needed.",
       },
       {
         title: "Wheel Balancing",
         description:
-          "Need tyre maintenance for your business vehicles? We come to your location to assess your fleet’s tyre needs and provide the required service.",
+          "Notice unusual vibrations while driving? Our mobile wheel balancing service helps improve driving comfort and supports even tyre wear.",
       },
       {
         title: "Fleet Tyre Maintenance",
         description:
-          "Keep your business vehicles moving with mobile tyre maintenance support. We help businesses manage tyre replacement, puncture repairs and wheel balancing for their fleets.",
-      },
+          "Managing multiple business vehicles? We provide mobile tyre maintenance support for fleets, including tyre replacement, puncture repair and wheel balancing.",
+      }
     ],
   },
   weComeToYou: {
     id: 2,
     eyebrow: "We come to you",
-    title: "We Come to You in Campbelltown",
+    title: "Mobile Tyre Services at Your Location in Kingsgrove",
     description:
-      "A tyre problem can interrupt your day, especially when you have somewhere to be. With Quickfit Mobile Tyres, you don't need to organise a trip to a tyre shop.",
+      "A tyre issue shouldn't mean rearranging your entire day. Quickfit Mobile Tyres makes it easier by bringing tyre services to you in Kingsgrove.",
     paragraphs: [
-      "We bring mobile tyre services to your location in Campbelltown, whether you're:",
-      "Our mobile service is designed to make tyre repairs and replacements more convenient.",
-      "Need help with a tyre problem in Campbelltown? Call 0404 730 738.",
+      "We can assist at locations such as:",
+      "You can contact us, explain the problem and let us bring the required mobile tyre service to your location.",
+      "Call 0404 730 738 for mobile tyre assistance in Kingsgrove.",
     ],
     cards: [
       {
         title: "At Home",
-        description: "At home with a flat or damaged tyre.",
+        description:
+          "Your home or residential parking area.",
       },
       {
         title: "At Work",
-        description: "At your workplace and unable to leave your vehicle.",
+        description:
+          "Your workplace or business premises.",
       },
       {
         title: "Business or Fleet",
-        description: "Managing vehicles at a business or fleet location.",
+        description:
+          "A business vehicle or fleet location.",
       },
       {
         title: "Roadside",
         description:
-          "In a safe location on the roadside and need tyre assistance.",
-      },
+          "A safe roadside location where mobile tyre assistance can be carried out.",
+      }
     ],
   },
   howItWorks: {
@@ -127,30 +132,30 @@ export const campbelltown = {
     steps: [
       {
         stepNumber: 1,
-        title: "Give Us a Call",
+        title: "Call Our Team",
         description:
-          "Call Quickfit Mobile Tyres on 0404 730 738 and explain the tyre problem.",
+          "Contact Quickfit Mobile Tyres on 0404 730 738 and tell us what has happened.",
         phoneUrl: "tel:0404730738",
         phoneLabel: "0404 730 738",
       },
       {
         stepNumber: 2,
-        title: "Share Your Location",
+        title: "Tell Us Where You Are",
         description:
-          "Let us know where your vehicle is located in Campbelltown and what assistance you need.",
+          "Share your location in Kingsgrove and the type of tyre assistance you need.",
       },
       {
         stepNumber: 3,
-        title: "We Come to You",
+        title: "We Come to Your Location",
         description:
-          "Our mobile tyre service comes to your location to assess the issue.",
+          "Our mobile service comes to your vehicle and assesses the tyre problem.",
       },
       {
         stepNumber: 4,
-        title: "Get Your Tyre Problem Resolved",
+        title: "We Carry Out the Required Service",
         description:
-          "We carry out the required tyre service, whether it's a suitable puncture repair, tyre replacement or wheel balancing.",
-      },
+          "Depending on the condition of the tyre, we carry out a suitable repair, replacement or wheel balancing service.",
+      }
     ],
   },
   partners: {
@@ -162,7 +167,7 @@ export const campbelltown = {
     eyebrow: "What Our Customers Say",
     title: "What Our Customers Say",
     description:
-      "We value the trust our customers place in Quickfit Mobile Tyres. Read genuine customer feedback about our mobile tyre services and the experience of having tyre assistance brought directly to their location.",
+      "Our customers' experiences matter to us. See what people say about Quickfit Mobile Tyres and our mobile tyre services.",
     ctaLabel: "Read Our Google Reviews",
   },
   findOnGoogle: {
@@ -170,16 +175,16 @@ export const campbelltown = {
     eyebrow: "Find Us on Google",
     title: "Find Us on Google",
     description:
-      "Check out our Google Business Profile for Quickfit Mobile Tyres in Campbelltown.",
+      "Looking for mobile tyre repair in Kingsgrove or nearby suburbs? Find Quickfit Mobile Tyres on Google to view our business profile, customer reviews and location information.",
   },
   localArea: {
     id: 7,
-    heading: "Mobile Tyre Services Across Campbelltown NSW",
+    heading: "Looking for Tyre Repair in Kingsgrove NSW?",
     paragraphs: [
-      "Looking for mobile tyre repair in Campbelltown? Quickfit Mobile Tyres provides mobile assistance for drivers who need help with damaged, punctured or worn tyres.",
-      "Instead of taking time out of your day to visit a tyre shop, you can contact us and have the tyre service brought to your location.",
-      "From tyre replacement and puncture repair to wheel balancing and fleet tyre maintenance, we're here to make dealing with tyre problems simpler.",
-      "Whether you searched for mobile tyre repair near me, tyre repair Campbelltown or mobile tyre replacement, contact Quickfit Mobile Tyres for assistance.",
+      "If you're searching for tyre repair near me, mobile tyre repair Kingsgrove or mobile tyre replacement, Quickfit Mobile Tyres is here to help.",
+      "We provide mobile tyre services in Kingsgrove, helping drivers deal with punctures, damaged tyres and other tyre-related problems at their location.",
+      "Our services include puncture repair, tyre replacement, wheel balancing and fleet tyre maintenance. Rather than making a separate trip to a tyre shop, you can call us and arrange mobile assistance.",
+      "We operate from 7 am to 9 pm to help make tyre services more convenient.",
     ],
     phoneCta: {
       label: "Call 0404 730 738",
@@ -193,47 +198,48 @@ export const campbelltown = {
     items: [
       {
         id: 1,
-        question: "Do you provide mobile tyre repair in Campbelltown?",
+        question: "Do you offer mobile tyre repair in Kingsgrove?",
         answer:
-          "Yes. Quickfit Mobile Tyres provides mobile tyre services in Campbelltown NSW, including puncture repair, tyre replacement, wheel balancing and fleet tyre maintenance.",
+          "Yes. We provide mobile tyre services in Kingsgrove, including puncture repairs, tyre replacement, wheel balancing and fleet tyre maintenance.",
       },
       {
         id: 2,
-        question: "Can you come to my home or workplace?",
+        question: "Can you replace a tyre at my location?",
         answer:
-          "Yes. Our mobile service is designed to assist you at your location, including your home or workplace.",
+          "Yes. We provide mobile tyre replacement services and can come to your location in Kingsgrove to assess your requirements and carry out the work.",
       },
       {
         id: 3,
-        question: "Can every punctured tyre be repaired?",
+        question: "Is it possible to repair a punctured tyre?",
         answer:
-          "No. It depends on the location and extent of the damage. We assess the tyre first and only recommend a repair when it is safe and suitable. A replacement may be necessary in some cases.",
+          "Some punctures can be repaired, but not all. The damage must be assessed to determine whether a repair is safe. If it is not suitable for repair, a replacement may be required.",
       },
       {
         id: 4,
-        question: "Do you offer same-day mobile tyre assistance?",
+        question: "Do you provide same-day tyre assistance?",
         answer:
-          "We aim to help resolve your tyre problem on the same day. The work required depends on the condition of the tyre and the service needed.",
+          "We aim to resolve tyre problems on the same day. The work required depends on the tyre's condition and the service needed.",
       },
       {
         id: 5,
-        question: "What are your operating hours?",
-        answer: "Quickfit Mobile Tyres operates from 7 am to 9 pm.",
+        question: "What time do you operate?",
+        answer:
+          "Our operating hours are 7 am–9 pm.",
       },
       {
         id: 6,
-        question: "How do I arrange mobile tyre service in Campbelltown?",
+        question: "How can I contact Quickfit Mobile Tyres?",
         answer:
-          "Simply call 0404 730 738, explain your tyre problem and share your location.",
-      },
+          "Call us on 0404 730 738 and share your location and tyre problem.",
+      }
     ],
   },
   finalCta: {
     id: 8,
     eyebrow: "Get Mobile Assistance",
-    title: "Need Mobile Tyre Assistance in Campbelltown?",
+    title: "Need Mobile Tyre Repair in Kingsgrove?",
     paragraphs: [
-      "Don't let a flat, punctured or damaged tyre disrupt your day. Call Quickfit Mobile Tyres and get mobile tyre assistance at your location.",
+      "Don't let a tyre problem slow you down. Quickfit Mobile Tyres brings mobile tyre services directly to your location in Kingsgrove.",
     ],
     phoneCta: {
       label: "Call Now",

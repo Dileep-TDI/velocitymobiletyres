@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
-import { campbelltown } from "@/content/siteContent";
+import { kingsgrove } from "@/content/siteContent";
 
-/** Canonical Campbelltown landing lives at /mobile-tyre-repair-campbelltown/ */
+/** Canonical Kingsgrove landing lives at /mobile-tyre-repair-kingsgrove/ */
 export default function HomePage() {
-  redirect(`/${campbelltown.slug}/`);
+  redirect(`/${kingsgrove.slug}/`);
 }

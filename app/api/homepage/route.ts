@@ -1,18 +1,18 @@
 import { NextResponse } from "next/server";
-import { site, campbelltown } from "@/content/siteContent";
+import { site, kingsgrove } from "@/content/siteContent";
 import { buildLandingView } from "@/lib/static-page";
 
 /** Serves static landing content from content/siteContent.ts (Strapi disabled). */
 export async function GET() {
-  const view = buildLandingView(campbelltown);
+  const view = buildLandingView(kingsgrove);
 
   return NextResponse.json({
     ok: true,
     source: "static",
     brand: site.brand,
     data: {
-      seo: campbelltown.seo,
-      location: campbelltown.location,
+      seo: kingsgrove.seo,
+      location: kingsgrove.location,
       hero: view.hero,
       whatWeDo: view.whatWeDo,
       weComeToYou: view.weComeToYou,

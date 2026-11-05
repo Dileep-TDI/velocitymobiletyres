@@ -57,7 +57,7 @@ function mapReviews(
       text: r.text!.trim(),
       relativeTime: r.relative_time_description ?? "recently",
       source: "Google" as const,
-      location: "Campbelltown",
+      location: "Kingsgrove",
       profilePhotoUrl: r.profile_photo_url ?? null,
     }));
 }

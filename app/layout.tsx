@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Barlow, Barlow_Condensed } from "next/font/google";
 import "./globals.css";
 import { siteImages } from "@/lib/site-images";
-import { site, campbelltown } from "@/content/siteContent";
+import { site, kingsgrove } from "@/content/siteContent";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -23,8 +23,8 @@ const barlowCondensed = Barlow_Condensed({
 });
 
 export const metadata: Metadata = {
-  title: campbelltown.seo.metaTitle,
-  description: campbelltown.seo.metaDescription,
+  title: kingsgrove.seo.metaTitle,
+  description: kingsgrove.seo.metaDescription,
   icons: {
     icon: [
       {
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: campbelltown.seo.metaTitle,
-    description: campbelltown.seo.metaDescription,
+    title: kingsgrove.seo.metaTitle,
+    description: kingsgrove.seo.metaDescription,
     siteName: site.brand,
     images: [{ url: siteImages.ogDefault }],
   },
