@@ -29,9 +29,9 @@ export default function ReviewsSection({
     reviews?.googleReviewsUrl ?? googleSearchUrl;
   const reviewsCtaLabel = reviews?.ctaLabel ?? "Read Our Google Reviews";
   const businessLabel =
-    findOnGoogle?.businessLabel ?? "Quickfit Mobile Tyres Campbelltown";
+    findOnGoogle?.businessLabel ?? "Quickfit Mobile Tyres Chipping Norton";
   const locationLabel =
-    reviews?.locationLabel ?? "100% Mobile Service in Campbelltown";
+    reviews?.locationLabel ?? "100% Mobile Service in Chipping Norton";
 
   return (
     <section
@@ -172,7 +172,7 @@ export default function ReviewsSection({
                   <span>{businessLabel}</span>
                 </div>
                 <div className="text-white/50 text-xs">
-                  Farrow Rd, Campbelltown NSW 2560 • Open 7:00 AM – 9:00 PM
+                  Chipping Norton NSW 2170 • Open 7:00 AM – 9:00 PM
                 </div>
                 <a
                   href="tel:0404730738"

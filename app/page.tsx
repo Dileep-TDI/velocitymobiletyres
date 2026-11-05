@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
-import { campbelltown } from "@/content/siteContent";
+import { chippingNorton } from "@/content/siteContent";
 
-/** Canonical Campbelltown landing lives at /mobile-tyre-repair-campbelltown/ */
+/** Canonical Chipping Norton landing lives at /mobile-tyre-repair-chipping-norton/ */
 export default function HomePage() {
-  redirect(`/${campbelltown.slug}/`);
+  redirect(`/${chippingNorton.slug}/`);
 }

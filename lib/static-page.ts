@@ -1,4 +1,4 @@
-import { site, campbelltown } from "@/content/siteContent";
+import { site, chippingNorton } from "@/content/siteContent";
 import type {
   HomepageHero,
   WhatWeDoData,
@@ -12,10 +12,10 @@ import type {
   FinalCtaData,
 } from "@/lib/types";
 
-export type StaticLandingPage = typeof campbelltown;
+export type StaticLandingPage = typeof chippingNorton;
 
 /** Active landing page content — sourced only from content/siteContent.ts */
-export const activePage: StaticLandingPage = campbelltown;
+export const activePage: StaticLandingPage = chippingNorton;
 
 export type LandingViewModel = {
   hero: HomepageHero;
@@ -128,7 +128,7 @@ export function buildLandingView(
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Farrow Rd",
+      streetAddress: page.location.streetAddress,
       addressLocality: page.location.suburb,
       addressRegion: "NSW",
       postalCode: page.location.postalCode,

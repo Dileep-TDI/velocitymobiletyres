@@ -13,40 +13,43 @@ export const site = {
   },
 } as const;
 
-/** Campbelltown landing — /mobile-tyre-repair-campbelltown/ */
-export const campbelltown = {
-  slug: "mobile-tyre-repair-campbelltown",
+/** Chipping Norton landing — /mobile-tyre-repair-chipping-norton/ */
+export const chippingNorton = {
+  slug: "mobile-tyre-repair-chipping-norton",
   location: {
-    suburb: "Campbelltown",
+    suburb: "Chipping Norton",
     region: "Sydney NSW",
-    label: "Campbelltown, Sydney NSW",
-    postalCode: "2560",
-    addressLine: "Farrow Rd, Campbelltown NSW 2560, Australia",
+    label: "Chipping Norton, Sydney NSW",
+    postalCode: "2170",
+    streetAddress: "Chipping Norton",
+    addressLine: "Chipping Norton NSW 2170, Australia",
+    shortAddress: "Chipping Norton NSW 2170",
     mapEmbedUrl:
-      "https://maps.google.com/maps?q=Quickfit+Mobile+Tyres+Campbelltown%2C+Farrow+Rd%2C+Campbelltown+NSW+2560%2C+Australia&t=&z=15&ie=UTF8&iwloc=&output=embed",
-    mapTitle: "Quickfit Mobile Tyres Campbelltown — Farrow Rd, Campbelltown NSW 2560",
+      "https://maps.google.com/maps?q=Quickfit%20Mobile%20Tyres%20Chipping%20Norton%2C%20Chipping%20Norton%20NSW%202170%2C%20Australia&t=&z=15&ie=UTF8&iwloc=&output=embed",
+    mapTitle: "Quickfit Mobile Tyres Chipping Norton — Chipping Norton NSW 2170",
     googleSearchUrl:
-      "https://www.google.com/search?q=Quickfit+Mobile+Tyres+Campbelltown",
+      "https://www.google.com/search?q=Quickfit%20Mobile%20Tyres%20Chipping%20Norton",
     googleReviewsUrl:
-      "https://www.google.com/search?q=Quickfit+Mobile+Tyres+Campbelltown+reviews",
-    geo: { latitude: -34.0675, longitude: 150.8142 },
+      "https://www.google.com/search?q=Quickfit%20Mobile%20Tyres%20Chipping%20Norton%20reviews",
+    geo: { latitude: -33.91992, longitude: 150.95859 },
   },
   seo: {
     metaTitle:
-      "Mobile Tyre Repair Campbelltown | Quickfit Mobile Tyres",
+      "Mobile Tyre Repair Chipping Norton | Quickfit Mobile Tyres",
     metaDescription:
-      "Need mobile tyre repair in Campbelltown? Quickfit Mobile Tyres comes to you for puncture repair, tyre replacement, wheel balancing and fleet tyre maintenance. Open 7 am – 9 pm. Call 0404 730 738.",
+      "Need mobile tyre repair in Chipping Norton? Quickfit Mobile Tyres comes to you for puncture repair, tyre replacement, wheel balancing and fleet tyre maintenance. Open 7 am – 9 pm. Call 0404 730 738.",
     canonicalUrl:
-      "https://quickfitmobiletyres.com.au/mobile-tyre-repair-campbelltown/",
+      "https://quickfitmobiletyres.com.au/mobile-tyre-repair-chipping-norton/",
   },
   hero: {
-    eyebrow: "Campbelltown, Sydney NSW",
-    title: "Need Mobile Tyre Repair in Campbelltown?",
-    highlight: "Campbelltown",
+    eyebrow: "Chipping Norton, Sydney NSW",
+    title: "Mobile Tyre Repair in Chipping Norton - We Come to You",
+    highlight: "Chipping Norton",
     descriptions: [
-      "Got a flat tyre, puncture or damaged tyre in Campbelltown? Quickfit Mobile Tyres brings professional mobile tyre services directly to your location.",
-      "Whether you're at home, at work or dealing with a tyre problem on the road, we come to you, assess the issue and help get you back on the road.",
-      "Call Quickfit Mobile Tyres: 0404 730 738",
+      "Got a flat tyre, a puncture or a damaged tyre? Quickfit Mobile Tyres provides mobile tyre repair and replacement services across Chipping Norton and nearby suburbs.",
+      "We come directly to your location to get your tyre issue sorted, so you don't need to travel to a tyre shop.",
+      "Need mobile tyre assistance in Chipping Norton?",
+      "Call us now for mobile tyre assistance at your location.",
     ],
     hours: {
       label: "Operating Hours:",
@@ -65,7 +68,7 @@ export const campbelltown = {
     eyebrow: "Services",
     title: "What We Do",
     description:
-      "From unexpected punctures to tyre replacements, Quickfit Mobile Tyres provides practical mobile tyre services across Campbelltown.",
+      "From unexpected punctures to worn tyres and routine vehicle maintenance, Quickfit Mobile Tyres provides mobile tyre services to help keep your vehicle on the road.",
     cards: [
       {
         title: "Puncture Repair",
@@ -75,49 +78,51 @@ export const campbelltown = {
       {
         title: "Tyre Replacement",
         description:
-          "Experiencing steering wheel vibrations? We come to your location to assess the issue and help improve your wheel balance.",
+          "Have a worn, damaged or unrepairable tyre? We come to your location to assess your requirements and carry out the necessary tyre replacement.",
       },
       {
         title: "Wheel Balancing",
         description:
-          "Need tyre maintenance for your business vehicles? We come to your location to assess your fleet’s tyre needs and provide the required service.",
+          "Experiencing steering wheel vibrations while driving? We come to your location to assess the issue and help improve your wheel balance.",
       },
       {
         title: "Fleet Tyre Maintenance",
         description:
-          "Keep your business vehicles moving with mobile tyre maintenance support. We help businesses manage tyre replacement, puncture repairs and wheel balancing for their fleets.",
-      },
+          "Need tyre maintenance for your business vehicles? We come to your location to assess your fleet's tyre needs and provide the required tyre services.",
+      }
     ],
   },
   weComeToYou: {
     id: 2,
     eyebrow: "We come to you",
-    title: "We Come to You in Campbelltown",
+    title: "Mobile Tyre Assistance at Your Location",
     description:
-      "A tyre problem can interrupt your day, especially when you have somewhere to be. With Quickfit Mobile Tyres, you don't need to organise a trip to a tyre shop.",
+      "A tyre problem can happen at any time and make it difficult to continue your day. Quickfit Mobile Tyres comes to your location in Chipping Norton and nearby suburbs to help resolve your tyre issues.",
     paragraphs: [
-      "We bring mobile tyre services to your location in Campbelltown, whether you're:",
-      "Our mobile service is designed to make tyre repairs and replacements more convenient.",
-      "Need help with a tyre problem in Campbelltown? Call 0404 730 738.",
+      "We bring mobile tyre services to your location in Chipping Norton, whether you're:",
+      "Need help with your tyres? Call Quickfit Mobile Tyres on 0404 730 738.",
     ],
     cards: [
       {
         title: "At Home",
-        description: "At home with a flat or damaged tyre.",
+        description:
+          "Got a flat tyre while your vehicle is parked at home? We come to your location, assess the problem and carry out the required tyre service.",
       },
       {
         title: "At Work",
-        description: "At your workplace and unable to leave your vehicle.",
+        description:
+          "Don't let a damaged tyre interrupt your work commitments. We come to your workplace to help resolve your tyre issue.",
       },
       {
         title: "Business or Fleet",
-        description: "Managing vehicles at a business or fleet location.",
+        description:
+          "Managing multiple business vehicles? We provide mobile tyre services at business locations to help keep your fleet moving and your operations running.",
       },
       {
         title: "Roadside",
         description:
-          "In a safe location on the roadside and need tyre assistance.",
-      },
+          "Stranded with a flat or damaged tyre? Contact us for mobile tyre assistance. We come to your location to assess the issue and help get you back on the road. Always prioritise your safety while waiting for assistance.",
+      }
     ],
   },
   howItWorks: {
@@ -127,9 +132,9 @@ export const campbelltown = {
     steps: [
       {
         stepNumber: 1,
-        title: "Give Us a Call",
+        title: "Call Us",
         description:
-          "Call Quickfit Mobile Tyres on 0404 730 738 and explain the tyre problem.",
+          "Call 0404 730 738 and tell us about your flat tyre, puncture or replacement needs.",
         phoneUrl: "tel:0404730738",
         phoneLabel: "0404 730 738",
       },
@@ -137,20 +142,20 @@ export const campbelltown = {
         stepNumber: 2,
         title: "Share Your Location",
         description:
-          "Let us know where your vehicle is located in Campbelltown and what assistance you need.",
+          "Tell us where your vehicle is located in Chipping Norton or a nearby suburb, along with your vehicle details.",
       },
       {
         stepNumber: 3,
         title: "We Come to You",
         description:
-          "Our mobile tyre service comes to your location to assess the issue.",
+          "Our mobile tyre service comes to your location to assess the problem and determine the right solution.",
       },
       {
         stepNumber: 4,
         title: "Get Your Tyre Problem Resolved",
         description:
-          "We carry out the required tyre service, whether it's a suitable puncture repair, tyre replacement or wheel balancing.",
-      },
+          "We carry out the required tyre service to help get you back on the road, aiming to resolve your tyre problem on the same day.",
+      }
     ],
   },
   partners: {
@@ -162,7 +167,7 @@ export const campbelltown = {
     eyebrow: "What Our Customers Say",
     title: "What Our Customers Say",
     description:
-      "We value the trust our customers place in Quickfit Mobile Tyres. Read genuine customer feedback about our mobile tyre services and the experience of having tyre assistance brought directly to their location.",
+      "Choosing a mobile tyre service is easier when you can hear about other customers' experiences. Read genuine feedback from customers who have used Quickfit Mobile Tyres.",
     ctaLabel: "Read Our Google Reviews",
   },
   findOnGoogle: {
@@ -170,16 +175,16 @@ export const campbelltown = {
     eyebrow: "Find Us on Google",
     title: "Find Us on Google",
     description:
-      "Check out our Google Business Profile for Quickfit Mobile Tyres in Campbelltown.",
+      "Looking for mobile tyre repair in Chipping Norton or nearby suburbs? Find Quickfit Mobile Tyres on Google to view our business profile, customer reviews and location information.",
   },
   localArea: {
     id: 7,
-    heading: "Mobile Tyre Services Across Campbelltown NSW",
+    heading: "Mobile Tyre Repair Near You in Chipping Norton",
     paragraphs: [
-      "Looking for mobile tyre repair in Campbelltown? Quickfit Mobile Tyres provides mobile assistance for drivers who need help with damaged, punctured or worn tyres.",
-      "Instead of taking time out of your day to visit a tyre shop, you can contact us and have the tyre service brought to your location.",
-      "From tyre replacement and puncture repair to wheel balancing and fleet tyre maintenance, we're here to make dealing with tyre problems simpler.",
-      "Whether you searched for mobile tyre repair near me, tyre repair Campbelltown or mobile tyre replacement, contact Quickfit Mobile Tyres for assistance.",
+      "Looking for mobile tyre repair near me, tyre replacement or mobile tyre fitting in Chipping Norton? Quickfit Mobile Tyres brings tyre assistance directly to your location.",
+      "We service Chipping Norton and nearby suburbs, helping drivers deal with punctures, damaged tyres and replacement needs without having to travel to a tyre shop.",
+      "Whether you're at home, at work or managing business vehicles, we bring mobile tyre services to your location to help get your tyre problem sorted.",
+      "Need mobile tyre repair in Chipping Norton? Call 0404 730 738.",
     ],
     phoneCta: {
       label: "Call 0404 730 738",
@@ -193,47 +198,56 @@ export const campbelltown = {
     items: [
       {
         id: 1,
-        question: "Do you provide mobile tyre repair in Campbelltown?",
+        question: "Do you provide mobile tyre repair in Chipping Norton?",
         answer:
-          "Yes. Quickfit Mobile Tyres provides mobile tyre services in Campbelltown NSW, including puncture repair, tyre replacement, wheel balancing and fleet tyre maintenance.",
+          "Yes. Quickfit Mobile Tyres provides mobile tyre services in Chipping Norton and nearby suburbs. We come to your location to assess and resolve your tyre problem.",
       },
       {
         id: 2,
-        question: "Can you come to my home or workplace?",
+        question: "What are your operating hours?",
         answer:
-          "Yes. Our mobile service is designed to assist you at your location, including your home or workplace.",
+          "We operate from 7 am to 9 pm.",
       },
       {
         id: 3,
-        question: "Can every punctured tyre be repaired?",
+        question: "Can you repair a punctured tyre at my location?",
         answer:
-          "No. It depends on the location and extent of the damage. We assess the tyre first and only recommend a repair when it is safe and suitable. A replacement may be necessary in some cases.",
+          "We come to your location to assess the puncture and repair the tyre where it is safe to do so. If the damage cannot be repaired safely, replacement may be required.",
       },
       {
         id: 4,
-        question: "Do you offer same-day mobile tyre assistance?",
+        question: "Do you provide mobile tyre replacement?",
         answer:
-          "We aim to help resolve your tyre problem on the same day. The work required depends on the condition of the tyre and the service needed.",
+          "Yes. We provide mobile tyre replacement services, coming to your location to assess your requirements and replace the tyre.",
       },
       {
         id: 5,
-        question: "What are your operating hours?",
-        answer: "Quickfit Mobile Tyres operates from 7 am to 9 pm.",
+        question: "Do you offer same-day tyre service?",
+        answer:
+          "We aim to resolve your tyre problem on the same day. The work required will depend on the nature of the tyre damage and the service needed.",
       },
       {
         id: 6,
-        question: "How do I arrange mobile tyre service in Campbelltown?",
+        question: "Do you service suburbs near Chipping Norton?",
         answer:
-          "Simply call 0404 730 738, explain your tyre problem and share your location.",
+          "Yes. We service Chipping Norton and nearby suburbs, bringing mobile tyre assistance directly to your location.",
       },
+      {
+        id: 7,
+        question: "What information should I provide when I call?",
+        answer:
+          "Tell us your location, vehicle make and model, and what happened to your tyre. If you know your tyre size, have that information ready too.",
+      }
     ],
   },
   finalCta: {
     id: 8,
     eyebrow: "Get Mobile Assistance",
-    title: "Need Mobile Tyre Assistance in Campbelltown?",
+    title: "Need Mobile Tyre Repair in Chipping Norton?",
     paragraphs: [
-      "Don't let a flat, punctured or damaged tyre disrupt your day. Call Quickfit Mobile Tyres and get mobile tyre assistance at your location.",
+      "Don't let a tyre problem disrupt your day. Quickfit Mobile Tyres comes to your location in Chipping Norton and nearby suburbs to assess your tyre issue and get it sorted.",
+      "From puncture repairs and tyre replacements to wheel balancing and fleet tyre maintenance, we're here to help.",
+      "Your tyre problem, our priority. We'll come to you and help get you back on the road.",
     ],
     phoneCta: {
       label: "Call Now",
